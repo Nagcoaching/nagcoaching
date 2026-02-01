@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app:*)",
+      "Bash(where:*)",
+      "Bash(where npm:*)",
+      "Bash(python -m http.server:*)",
+      "Bash(curl:*)",
+      "Bash(dir \"C:\\\\Program Files\\\\nodejs\")",
+      "Bash(dir \"C:\\\\Program Files \\(x86\\)\\\\nodejs\")",
+      "Bash(copy:*)",
+      "WebFetch(domain:www.google.com)"
+    ]
+  }
+}

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Découvrez le studio de coaching sportif privé Nag Coaching à Vert-Saint-Denis, près de Melun. 70m² équipé, parking gratuit, espace 100% privé.">
+  <title>Le Studio - Nag Coaching | Coach Sportif près de Melun</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="src/images/logov3.png" alt="Nag Coaching Logo">
+        <span class="logo-text">Nag Coaching</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="studio.html">Studio</a>
+        <a href="coaching.html">Coaching</a>
+        <a href="tarifs.html">Tarifs</a>
+        <a href="avis.html">Avis</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-cta">
+        <a href="contact.html" class="btn btn-primary">Réserver un essai</a>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Accueil</a>
+    <a href="studio.html">Studio</a>
+    <a href="coaching.html">Coaching</a>
+    <a href="tarifs.html">Tarifs</a>
+    <a href="avis.html">Avis</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Accueil</a>
+        <span>/</span>
+        <span>Le Studio</span>
+      </div>
+      <h1>Le Studio</h1>
+      <p>70m² entièrement privés, pensés pour ta progression.</p>
+    </div>
+  </section>
+
+  <!-- Vidéo du studio -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Découvre le studio en vidéo</h2>
+        <p>Une visite guidée pour te donner un aperçu de l'ambiance et des équipements.</p>
+      </div>
+
+      <div style="max-width: 900px; margin: 0 auto;">
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: var(--radius-xl); box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
+          <iframe
+            src="https://www.youtube.com/embed/qoXQwLtXTIs"
+            title="Découverte du studio Nag Coaching"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparaison Salle vs Studio (en haut) -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="section-header">
+        <h2>Salle de sport vs Studio privé</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5); max-width: 900px; margin: 0 auto;">
+        <div class="card" style="padding: var(--space-5); border-left: 4px solid var(--color-gray-400);">
+          <h3 style="color: var(--color-gray-600); margin-bottom: var(--space-4);">Salle classique</h3>
+          <ul style="display: flex; flex-direction: column; gap: var(--space-3); color: var(--color-gray-600);">
+            <li style="display: flex; align-items: center; gap: var(--space-2);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              Environnement bondé, bruyant
+            </li>
+            <li style="display: flex; align-items: center; gap: var(--space-2);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              Seul ou coach partagé
+            </li>
+            <li style="display: flex; align-items: center; gap: var(--space-2);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              Programme générique
+            </li>
+            <li style="display: flex; align-items: center; gap: var(--space-2);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              Attente fréquente au matériel
+            </li>
+            <li style="display: flex; align-items: center; gap: var(--space-2);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              Résultats variables, abandon fréquent
+            </li>
+          </ul>
+        </div>
+
+        <div class="card" style="padding: var(--space-5); border-left: 4px solid var(--color-primary); background: var(--color-gray-100);">
+          <h3 style="color: var(--color-primary); margin-bottom: var(--space-4);">Studio Nag Coaching</h3>
+          <ul style="display: flex; flex-direction: column; gap: var(--space-3); color: var(--color-dark);">
+            <li style="display: flex; align-items: center; gap: var(--space-2);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Espace privé et calme
+            </li>
+            <li style="display: flex; align-items: center; gap: var(--space-2);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Coach dédié à 100%
+            </li>
+            <li style="display: flex; align-items: center; gap: var(--space-2);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Programme sur-mesure
+            </li>
+            <li style="display: flex; align-items: center; gap: var(--space-2);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Matériel toujours disponible
+            </li>
+            <li style="display: flex; align-items: center; gap: var(--space-2);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Résultats visibles et durables
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pourquoi un studio privé - Cards compactes -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Pourquoi un studio privé ?</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-4);">
+        <div class="card" style="padding: var(--space-5);">
+          <div style="width: 48px; height: 48px; background: var(--color-primary); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-4);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>
+          </div>
+          <h4 style="margin-bottom: var(--space-2);">Zéro regard</h4>
+          <p style="font-size: 0.9375rem; color: var(--color-gray-600); margin: 0;">Tu t'entraînes sans te sentir observé. Personne pour te juger ou te comparer.</p>
+        </div>
+
+        <div class="card" style="padding: var(--space-5);">
+          <div style="width: 48px; height: 48px; background: var(--color-primary); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-4);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </div>
+          <h4 style="margin-bottom: var(--space-2);">100% d'attention</h4>
+          <p style="font-size: 0.9375rem; color: var(--color-gray-600); margin: 0;">Je me concentre uniquement sur toi pendant toute la séance. Correction en temps réel.</p>
+        </div>
+
+        <div class="card" style="padding: var(--space-5);">
+          <div style="width: 48px; height: 48px; background: var(--color-primary); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-4);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <h4 style="margin-bottom: var(--space-2);">Zéro attente</h4>
+          <p style="font-size: 0.9375rem; color: var(--color-gray-600); margin: 0;">Tout le matériel est disponible. On enchaîne sans temps mort.</p>
+        </div>
+
+        <div class="card" style="padding: var(--space-5);">
+          <div style="width: 48px; height: 48px; background: var(--color-primary); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-4);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+          </div>
+          <h4 style="margin-bottom: var(--space-2);">Ton ambiance</h4>
+          <p style="font-size: 0.9375rem; color: var(--color-gray-600); margin: 0;">Pas de musique imposée, pas de néons. Un environnement calme et pro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Les avantages concrets - 2 colonnes -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Les avantages concrets</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-5);">
+        <div style="display: flex; gap: var(--space-4);">
+          <div style="width: 48px; height: 48px; background: var(--color-gray-200); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          </div>
+          <div>
+            <h4 style="margin-bottom: 4px;">70m² privés</h4>
+            <p style="font-size: 0.9375rem; color: var(--color-gray-600); margin: 0;">Espace dédié, pas de vestiaires partagés.</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: var(--space-4);">
+          <div style="width: 48px; height: 48px; background: var(--color-gray-200); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <div>
+            <h4 style="margin-bottom: 4px;">1 à 4 pers. max</h4>
+            <p style="font-size: 0.9375rem; color: var(--color-gray-600); margin: 0;">Suivi personnalisé garanti.</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: var(--space-4);">
+          <div style="width: 48px; height: 48px; background: var(--color-gray-200); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+          </div>
+          <div>
+            <h4 style="margin-bottom: 4px;">Parking gratuit</h4>
+            <p style="font-size: 0.9375rem; color: var(--color-gray-600); margin: 0;">Places devant le studio.</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: var(--space-4);">
+          <div style="width: 48px; height: 48px; background: var(--color-gray-200); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </div>
+          <div>
+            <h4 style="margin-bottom: 4px;">5-10 min de Melun</h4>
+            <p style="font-size: 0.9375rem; color: var(--color-gray-600); margin: 0;">Accessible depuis tout le secteur.</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: var(--space-4);">
+          <div style="width: 48px; height: 48px; background: var(--color-gray-200); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <div>
+            <h4 style="margin-bottom: 4px;">Horaires flexibles</h4>
+            <p style="font-size: 0.9375rem; color: var(--color-gray-600); margin: 0;">Matin, midi, soir, week-end.</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: var(--space-4);">
+          <div style="width: 48px; height: 48px; background: var(--color-gray-200); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div>
+            <h4 style="margin-bottom: 4px;">Hygiène top</h4>
+            <p style="font-size: 0.9375rem; color: var(--color-gray-600); margin: 0;">Nettoyage entre chaque séance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Équipements - Compact -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Le matériel</h2>
+        <p>Tout ce qu'il faut pour atteindre tes objectifs.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-4);">
+        <div style="text-align: center; padding: var(--space-4);">
+          <div style="width: 56px; height: 56px; background: var(--color-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-3);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M6.5 6.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/><path d="M17.5 6.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/><path d="M6.5 21.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/><path d="M17.5 21.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/><path d="M6.5 6.5v11M17.5 6.5v11M6.5 12h11"/></svg>
+          </div>
+          <h4 style="font-size: 1rem; margin-bottom: var(--space-2);">Musculation</h4>
+          <p style="font-size: 0.875rem; color: var(--color-gray-600); margin: 0;">Haltères, kettlebells, barres, rack squat, bancs</p>
+        </div>
+
+        <div style="text-align: center; padding: var(--space-4);">
+          <div style="width: 56px; height: 56px; background: var(--color-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-3);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+          </div>
+          <h4 style="font-size: 1rem; margin-bottom: var(--space-2);">Cardio</h4>
+          <p style="font-size: 0.875rem; color: var(--color-gray-600); margin: 0;">Rameur, vélo, cordes, battle ropes</p>
+        </div>
+
+        <div style="text-align: center; padding: var(--space-4);">
+          <div style="width: 56px; height: 56px; background: var(--color-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-3);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+          </div>
+          <h4 style="font-size: 1rem; margin-bottom: var(--space-2);">Fonctionnel</h4>
+          <p style="font-size: 0.875rem; color: var(--color-gray-600); margin: 0;">TRX, medecine balls, steps, élastiques</p>
+        </div>
+
+        <div style="text-align: center; padding: var(--space-4);">
+          <div style="width: 56px; height: 56px; background: var(--color-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-3);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </div>
+          <h4 style="font-size: 1rem; margin-bottom: var(--space-2);">Récupération</h4>
+          <p style="font-size: 0.875rem; color: var(--color-gray-600); margin: 0;">Foam roller, bandes mobilité, tapis</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Localisation - 2 colonnes bien équilibrées -->
+  <section class="section">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-7); align-items: center;">
+        <div>
+          <h2 style="margin-bottom: var(--space-4);">Comment venir ?</h2>
+          <p style="margin-bottom: var(--space-5);">Studio situé à Vert-Saint-Denis (77240), idéalement placé pour Melun, Carré Sénart, Lieusaint, Savigny-le-Temple et les communes alentour.</p>
+
+          <div style="display: flex; flex-direction: column; gap: var(--space-4);">
+            <div style="display: flex; align-items: center; gap: var(--space-3);">
+              <div style="width: 40px; height: 40px; background: var(--color-primary); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <strong>Vert-Saint-Denis, 77240</strong>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: var(--space-3);">
+              <div style="width: 40px; height: 40px; background: var(--color-primary); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+              </div>
+              <div>
+                <strong>Parking gratuit</strong> devant le studio
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: var(--space-3);">
+              <div style="width: 40px; height: 40px; background: var(--color-primary); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div>
+                <strong>Lun-Ven</strong> 7h-21h | <strong>Week-end</strong> 9h-12h
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-container" style="min-height: 300px; border-radius: var(--radius-lg); overflow: hidden;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42032.86657424399!2d2.5800000000000005!3d48.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5e3c9d0c4b8c9%3A0x40b82c3688c5460!2s77240%20Vert-Saint-Denis!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr" width="100%" height="100%" style="border:0; min-height: 300px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-dark cta-section">
+    <div class="container">
+      <h2>Viens voir par toi-même</h2>
+      <p>Réserve ton essai gratuit et découvre le studio.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-white btn-lg">Réserver un essai gratuit</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-text">Nag Coaching</span>
+          <p>Studio de coaching sportif privé près de Melun, Carré Sénart et Vert-Saint-Denis.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/nagcoaching" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://facebook.com/nagcoaching" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="studio.html">Le Studio</a></li>
+            <li><a href="coaching.html">Coaching</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="avis.html">Avis</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Coaching</h4>
+          <ul>
+            <li><a href="coaching-solo.html">Solo</a></li>
+            <li><a href="coaching-duo.html">Duo</a></li>
+            <li><a href="coaching-groupe.html">Small Group</a></li>
+            <li><a href="coaching-distance.html">À Distance</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul>
+            <li>Vert-Saint-Denis (77240)</li>
+            <li><a href="tel:+33674466641">06 74 46 66 41</a></li>
+            <li><a href="mailto:nagcoachingpro@gmail.com">nagcoachingpro@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Nag Coaching. Tous droits réservés.</p>
+        <div class="footer-legal">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="politique-confidentialite.html">Confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="sticky-cta">
+    <a href="tel:+33674466641" class="btn btn-secondary">Appeler</a>
+    <a href="contact.html" class="btn btn-primary">Réserver</a>
+  </div>
+
+  <script src="src/js/main.js"></script>
+</body>
+</html>

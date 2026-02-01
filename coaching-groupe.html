@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Coaching sportif en petit groupe (2-4 personnes) près de Melun. L'énergie du groupe, la qualité du coaching.">
+  <title>Coaching Small Group - Nag Coaching | Coach Sportif près de Melun</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="src/images/logov3.png" alt="Nag Coaching Logo">
+        <span class="logo-text">Nag Coaching</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="studio.html">Studio</a>
+        <a href="coaching.html">Coaching</a>
+        <a href="tarifs.html">Tarifs</a>
+        <a href="avis.html">Avis</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-cta">
+        <a href="contact.html" class="btn btn-primary">Réserver un essai</a>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Accueil</a><a href="studio.html">Studio</a><a href="coaching.html">Coaching</a><a href="tarifs.html">Tarifs</a><a href="avis.html">Avis</a><a href="contact.html">Contact</a>
+  </div>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Accueil</a><span>/</span><a href="coaching.html">Coaching</a><span>/</span><span>Small Group</span></div>
+      <h1>Coaching Small Group</h1>
+      <p>L'énergie du groupe, la qualité du coaching.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="coach-section">
+        <div class="coach-image">
+          <img src="src/images/sport entreprise.jpg" alt="Coaching small group">
+        </div>
+        <div class="coach-content">
+          <h2>Le meilleur des deux mondes</h2>
+          <p>Le small group, c'est 3 à 4 personnes max. Assez pour profiter de l'énergie collective, mais assez peu pour garder un suivi personnalisé.</p>
+          <p>Idéal pour les groupes d'amis qui veulent s'entraîner ensemble, ou pour ceux qui cherchent une option économique sans sacrifier la qualité.</p>
+
+          <div class="benefits-list mt-6">
+            <div class="benefit-item">
+              <div class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+              <div class="benefit-content"><h4>Dynamique de groupe</h4><p>L'émulation collective pousse à se dépasser</p></div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+              <div class="benefit-content"><h4>Tarif économique</h4><p>30€/pers - le format le plus accessible</p></div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+              <div class="benefit-content"><h4>4 personnes max</h4><p>Suffisamment petit pour un suivi de qualité</p></div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+              <div class="benefit-content"><h4>Fun garanti</h4><p>Les séances en groupe sont toujours plus fun</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header"><h2>Tarifs Small Group</h2><p>Prix par personne (3-4 personnes)</p></div>
+      <div class="pricing-table">
+        <div class="pricing-row featured">
+          <div class="pricing-label"><h4>Séance Small Group</h4><p>Prix par personne (3-4 pers), sans engagement</p></div>
+          <div class="pricing-value">30€/pers</div>
+          <a href="contact.html" class="btn btn-primary btn-sm">Réserver</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark cta-section">
+    <div class="container">
+      <h2>Formez votre groupe !</h2>
+      <p>Contactez-moi pour organiser vos séances.</p>
+      <div class="cta-buttons"><a href="contact.html" class="btn btn-white btn-lg">Nous contacter</a></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom"><p>&copy; 2024 Nag Coaching.</p></div>
+    </div>
+  </footer>
+
+  <div class="sticky-cta"><a href="tel:+33674466641" class="btn btn-secondary">Appeler</a><a href="contact.html" class="btn btn-primary">Réserver</a></div>
+  <script src="src/js/main.js"></script>
+</body>
+</html>
