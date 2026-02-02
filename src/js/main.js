@@ -217,7 +217,10 @@ function showFormSuccess(data) {
   }
 }
 
-// No auto-formatting for phone - let users type freely
+// Limit phone to 10 digits max
+document.querySelectorAll('input[type="tel"]').forEach(input => {
+  input.setAttribute('maxlength', '10');
+});
 
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
