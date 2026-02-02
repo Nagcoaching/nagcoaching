@@ -1,0 +1,10 @@
+# Robots.txt for nagcoaching.fr
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://nagcoaching.fr/sitemap.xml
+
+# Disallow admin/private areas (if any)
+Disallow: /.git/
+Disallow: /src/
