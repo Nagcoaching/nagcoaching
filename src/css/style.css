@@ -811,6 +811,9 @@ p {
   padding: var(--space-6);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .testimonial-stars {
@@ -830,6 +833,26 @@ p {
   font-style: italic;
   margin-bottom: var(--space-4);
   color: var(--color-gray-700);
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.review-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.review-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  background: var(--color-gray-100);
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-gray-200);
 }
 
 .testimonial-author {
@@ -922,6 +945,16 @@ p {
 
 .pricing-row.featured .pricing-label p {
   color: rgba(255, 255, 255, 0.8);
+}
+
+.pricing-row.featured .btn-primary {
+  background: var(--color-white);
+  color: var(--color-primary);
+}
+
+.pricing-row.featured .btn-primary:hover {
+  background: var(--color-gray-100);
+  transform: translateY(-2px);
 }
 
 .pricing-value {
@@ -1270,6 +1303,18 @@ p {
 
 .sticky-cta .btn {
   flex: 1;
+  font-size: 0.875rem;
+  padding: var(--space-3) var(--space-2);
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: white;
+}
+
+.btn-whatsapp:hover {
+  background: #1DA851;
+  transform: translateY(-2px);
 }
 
 /* Page Header */

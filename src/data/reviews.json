@@ -1,0 +1,208 @@
+{
+  "business": "Nag Coaching",
+  "googleRating": 5.0,
+  "totalReviews": 20,
+  "last_updated": "2025-02-02",
+  "reviews": [
+    {
+      "id": 1,
+      "author": "Gwladys C.",
+      "age": 32,
+      "rating": 5,
+      "date": "2024-12-07",
+      "text": "Nag est un très bon coach. Il s'adapte à tous les profils. J'aime son approche. Il n'a rien de commercial. Nous sommes là pour progresser et garder les résultats sur le long terme. Je recommande vivement.",
+      "photo": "",
+      "tags": ["Adaptabilité", "Résultats durables", "Approche naturelle"]
+    },
+    {
+      "id": 2,
+      "author": "Amandine D.",
+      "age": 25,
+      "rating": 5,
+      "date": "2024-11-19",
+      "text": "J'ai commencé les coachings en mai 2024. Je ne pensais pas être assidue aux séances plus de 2 mois. Aujourd'hui, je ne vois plus mon quotidien sans activité physique. Morgan a su me réconcilier avec le sport grâce à des séances personnalisées, des exercices adaptés ainsi que de précieux conseils et beaucoup d'écoute.",
+      "photo": "",
+      "tags": ["Motivation", "Séances personnalisées", "Écoute"]
+    },
+    {
+      "id": 3,
+      "author": "Amine A.",
+      "age": 31,
+      "rating": 5,
+      "date": "2024-11-19",
+      "text": "Je suis ravi d'avoir trouvé Morgan ! Il m'a énormément aidé à me remettre en forme grâce à ses méthodes structurées et sa capacité d'écoute. Chaque séance est un plaisir grâce à son professionnalisme et sa bienveillance. Je le recommande vivement à toute personne souhaitant atteindre ses objectifs.",
+      "photo": "",
+      "tags": ["Remise en forme", "Méthode structurée", "Bienveillance"]
+    },
+    {
+      "id": 4,
+      "author": "Anthony B.",
+      "age": 34,
+      "rating": 5,
+      "date": "2024-11-17",
+      "text": "Très bon coaching, Morgan est très sérieux et professionnel, il s'adapte à votre niveau. N'hésitez pas une seule seconde si vous voulez faire du sport bien encadré c'est là qu'il faut être !",
+      "photo": "",
+      "tags": ["Professionnalisme", "Adaptabilité", "Encadrement"]
+    },
+    {
+      "id": 5,
+      "author": "Mégane K.",
+      "age": 35,
+      "rating": 5,
+      "date": "2024-11-17",
+      "text": "Coaching de qualité ! Un coach expert dans son domaine, motivant et à l'écoute. L'ambiance agréable des séances diminue la perception de la souffrance (mais pas l'efficacité). Les objectifs sont partagés et les séances sont personnalisées et adaptées au niveau. Je recommande !",
+      "photo": "",
+      "tags": ["Expert", "Motivant", "Ambiance agréable"]
+    },
+    {
+      "id": 6,
+      "author": "Mélanie V.",
+      "age": 30,
+      "rating": 5,
+      "date": "2024-11-17",
+      "text": "Coach bienveillant et à l'écoute qui motive pour tous les défis sportifs mais aussi défis du quotidien. Depuis 1 an et demi ma forme physique est mieux et les douleurs au dos se sont estompées. Je recommande à 100% !!!",
+      "photo": "",
+      "tags": ["Bienveillance", "Soulagement douleurs", "Forme physique"]
+    },
+    {
+      "id": 7,
+      "author": "Marine D.",
+      "age": 30,
+      "rating": 5,
+      "date": "2024-01-13",
+      "text": "En deux mots : le meilleur ! Morgan est un coach très à l'écoute, il sait nous motiver pour aller toujours plus loin avec des séances adaptées et progressives ! Depuis + 1 an, c'est vraiment un plaisir de venir à chaque fois ! Sa salle de sport est très bien équipée. Et au-delà du sport, il fait preuve d'une grande bienveillance et de beaucoup d'humour.",
+      "photo": "",
+      "tags": ["Motivation", "Séances progressives", "Humour"]
+    },
+    {
+      "id": 8,
+      "author": "Elora J.",
+      "age": 29,
+      "rating": 5,
+      "date": "2024-01-10",
+      "text": "Morgan nous accompagne, mon mari et moi depuis maintenant un an. Il adapte les séances à nos objectifs individuels et aussi à nos capacités. Les séances se font toujours dans la bonne humeur, c'est toujours un plaisir d'y aller.",
+      "photo": "",
+      "tags": ["Coaching duo", "Bonne humeur", "Objectifs personnalisés"]
+    },
+    {
+      "id": 9,
+      "author": "Coline P.",
+      "age": 26,
+      "rating": 5,
+      "date": "2024-01-10",
+      "text": "Cela fera bientôt 1 an que je suis un entraînement deux fois par semaine avec Morgan, et j'ai presque atteint mes objectifs de perte de 20 kg ! Morgan calcule chaque séance afin que vous n'ayez jamais l'impression de stagner. Sa salle de sport privée est un grand plus pour ceux qui sont repoussés par les salles bondées comme moi !",
+      "photo": "",
+      "tags": ["Perte de poids", "Studio privé", "Progression constante"]
+    },
+    {
+      "id": 10,
+      "author": "Marina P.",
+      "age": 50,
+      "rating": 5,
+      "date": "2024-01-10",
+      "text": "Cela fait plus d'un an que je fais des séances de sport avec Morgan. Les résultats sont là et je partais de loin. Il a su s'adapter à mes demandes, mes besoins. Je vous le recommande, il est vraiment à l'écoute, et sait aussi nous pousser dans nos retranchements.",
+      "photo": "",
+      "tags": ["Résultats visibles", "Adaptation", "Dépassement de soi"]
+    },
+    {
+      "id": 11,
+      "author": "Mehdi M.",
+      "age": 37,
+      "rating": 5,
+      "date": "2022-07-31",
+      "text": "Excellent coach, salle atypique !!! Très bon feeling, a très bien compris ma démarche. Il me fait un programme progressif et je vois déjà des évolutions significatives. Arrangeant si besoin, vraiment top !!!",
+      "photo": "",
+      "tags": ["Communication", "Qualité", "Professionnalisme"]
+    },
+    {
+      "id": 12,
+      "author": "Sylvie K.",
+      "age": 60,
+      "rating": 5,
+      "date": "2022-07-29",
+      "text": "Accueillant, professionnel, à l'écoute, Nag Coaching saura toujours vous trouver un training adapté à vos objectifs. Faites-lui confiance. Moi je suis en coaching avec Morgan depuis plus de 4 ans et ça marche ! Home gym très bien équipé en matériel.",
+      "photo": "",
+      "tags": ["Communication", "Qualité", "Professionnalisme"]
+    },
+    {
+      "id": 13,
+      "author": "Diana L.",
+      "age": 38,
+      "rating": 5,
+      "date": "2021-11-10",
+      "text": "Coach à l'écoute et professionnel. Il a su repérer mon potentiel pour en tirer le meilleur. Après deux séances les a priori sur mes capacités physiques ont disparu. Avec lui on ne peut pas fuir, se cacher ou tricher ! C'est lui qui compte le nombre de répétitions !",
+      "photo": "",
+      "tags": ["Communication", "Qualité", "Professionnalisme"]
+    },
+    {
+      "id": 14,
+      "author": "Estelle B.",
+      "age": 34,
+      "rating": 5,
+      "date": "2021-10-07",
+      "text": "Coach au top, locaux propres et matériel de qualité. Motivant et vraiment très pro, je recommande à 1000% !!!!",
+      "photo": "",
+      "tags": ["Qualité", "Professionnalisme", "Motivation"]
+    },
+    {
+      "id": 15,
+      "author": "Anael D.",
+      "age": 36,
+      "rating": 5,
+      "date": "2021-08-28",
+      "text": "Les séances sont intenses mais toujours adaptées car Morgan est à l'écoute tout en me poussant à me surpasser. Et c'est bien plus agréable de se mettre mal dans la bonne ambiance : je le recommande !",
+      "photo": "",
+      "tags": ["Communication", "Qualité", "Professionnalisme"]
+    },
+    {
+      "id": 16,
+      "author": "Manon T.",
+      "age": 32,
+      "rating": 5,
+      "date": "2021-08-27",
+      "text": "Un professionnel au top, disponible et à l'écoute. Un suivi personnalisé. Je recommande vivement !",
+      "photo": "",
+      "tags": ["Communication", "Qualité", "Professionnalisme"]
+    },
+    {
+      "id": 17,
+      "author": "Zakia E.",
+      "age": 47,
+      "rating": 5,
+      "date": "2021-08-27",
+      "text": "Très bon coach, à l'écoute de ses clients et le coaching est vraiment adapté. Je le recommande sans hésitation.",
+      "photo": "",
+      "tags": ["Communication", "Qualité", "Professionnalisme"]
+    },
+    {
+      "id": 18,
+      "author": "Marine F.",
+      "age": 28,
+      "rating": 5,
+      "date": "2021-08-27",
+      "text": "Des séances super et faites en fonction de nos goûts au fur et à mesure ! Je recommande à 2000% !",
+      "photo": "",
+      "tags": ["Personnalisation", "Plaisir", "Adaptation"]
+    },
+    {
+      "id": 19,
+      "author": "Audrey M.",
+      "age": 34,
+      "rating": 5,
+      "date": "2021-08-27",
+      "text": "Ravie de mon coaching chez Morgan. Il n'hésite pas à me faire sortir de ma zone de confort afin que je repousse mes limites. Il adapte ses séances en fonction de mes capacités, besoins et aussi en fonction de mes goûts musicaux ! Je recommande fortement !!",
+      "photo": "",
+      "tags": ["Communication", "Qualité", "Professionnalisme"]
+    },
+    {
+      "id": 20,
+      "author": "Sara C.",
+      "age": 36,
+      "rating": 5,
+      "date": "2021-08-27",
+      "text": "Morgan me coach depuis plus de 1 an, c'est un coach motivant, qui te pousse à te surpasser, les résultats sont là et dans la bonne ambiance !",
+      "photo": "",
+      "tags": ["Communication", "Qualité", "Professionnalisme"]
+    }
+  ]
+}
