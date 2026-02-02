@@ -98,11 +98,11 @@ function validateForm(form) {
     }
   });
 
-  // Phone validation
+  // Phone validation - simplified (at least 10 digits)
   const phoneField = form.querySelector('input[type="tel"]');
   if (phoneField && phoneField.value) {
-    const phoneRegex = /^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/;
-    if (!phoneRegex.test(phoneField.value)) {
+    const digitsOnly = phoneField.value.replace(/\D/g, '');
+    if (digitsOnly.length < 10) {
       isValid = false;
       phoneField.style.borderColor = '#EF4444';
     }
@@ -217,26 +217,16 @@ function showFormSuccess(data) {
   }
 }
 
-// Format phone number as user types
+// Format phone number on blur (not while typing - better for mobile)
 document.querySelectorAll('input[type="tel"]').forEach(input => {
-  input.addEventListener('input', (e) => {
-    let value = e.target.value.replace(/\D/g, '');
-    if (value.length > 10) value = value.slice(0, 10);
+  input.addEventListener('blur', (e) => {
+    let value = e.target.value.replace(/[^\d+]/g, ''); // Keep + for international
 
-    if (value.length >= 2) {
-      value = value.slice(0, 2) + ' ' + value.slice(2);
+    // Only format if it looks like a French number starting with 0
+    if (value.startsWith('0') && value.length === 10) {
+      value = value.slice(0, 2) + ' ' + value.slice(2, 4) + ' ' + value.slice(4, 6) + ' ' + value.slice(6, 8) + ' ' + value.slice(8, 10);
+      e.target.value = value;
     }
-    if (value.length >= 5) {
-      value = value.slice(0, 5) + ' ' + value.slice(5);
-    }
-    if (value.length >= 8) {
-      value = value.slice(0, 8) + ' ' + value.slice(8);
-    }
-    if (value.length >= 11) {
-      value = value.slice(0, 11) + ' ' + value.slice(11);
-    }
-
-    e.target.value = value;
   });
 });
 
