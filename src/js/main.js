@@ -217,18 +217,7 @@ function showFormSuccess(data) {
   }
 }
 
-// Format phone number on blur (not while typing - better for mobile)
-document.querySelectorAll('input[type="tel"]').forEach(input => {
-  input.addEventListener('blur', (e) => {
-    let value = e.target.value.replace(/[^\d+]/g, ''); // Keep + for international
-
-    // Only format if it looks like a French number starting with 0
-    if (value.startsWith('0') && value.length === 10) {
-      value = value.slice(0, 2) + ' ' + value.slice(2, 4) + ' ' + value.slice(4, 6) + ' ' + value.slice(6, 8) + ' ' + value.slice(8, 10);
-      e.target.value = value;
-    }
-  });
-});
+// No auto-formatting for phone - let users type freely
 
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
