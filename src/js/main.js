@@ -208,9 +208,9 @@ function showFormSuccess(data) {
     formFields.style.display = 'none';
     formSuccess.style.display = 'block';
 
-    const whatsappBtn = formSuccess.querySelector('.btn-whatsapp-send');
+    const whatsappBtn = document.getElementById('whatsappSuccessBtn');
     if (whatsappBtn) {
-      whatsappBtn.href = whatsappLink;
+      whatsappBtn.setAttribute('href', whatsappLink);
     }
 
     formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
