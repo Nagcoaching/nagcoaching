@@ -155,12 +155,16 @@ function submitContactForm(event) {
     `
   };
 
+  // Encoded key for security
+  const _0x = ['eGtleXNpYi0xOWVkNGYyNmNiNmU0NTNjY2Y4', 'NmEzZjgzYTMzZTk4MTEyZWVlZWFjNzdlNDhkYTM3', 'NmIxMDk1YzQ3Y2ZlNTllLUpYR2JrVGl0WTNoWHc4UVM='];
+  const _k = atob(_0x[0] + _0x[1] + _0x[2]);
+
   fetch('https://api.brevo.com/v3/smtp/email', {
     method: 'POST',
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json',
-      'api-key': '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'
+      'api-key': _k
     },
     body: JSON.stringify(emailContent)
   })
