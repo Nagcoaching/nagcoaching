@@ -1355,6 +1355,69 @@ p {
   transform: translateY(-2px);
 }
 
+/* Benefits Grid (Local Pages) */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+
+@media (min-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .benefits-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.benefit-card {
+  background: var(--color-white);
+  padding: var(--space-5);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+  transition: all var(--transition-normal);
+}
+
+.benefit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-medium);
+}
+
+.benefit-icon {
+  width: 56px;
+  height: 56px;
+  background: var(--color-primary);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-4);
+}
+
+.benefit-icon svg {
+  width: 28px;
+  height: 28px;
+  color: white;
+}
+
+.benefit-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  margin-bottom: var(--space-2);
+  color: var(--color-dark);
+}
+
+.benefit-card p {
+  font-size: 0.95rem;
+  color: var(--color-gray-700);
+  line-height: 1.5;
+}
+
 /* Page Header */
 .page-header {
   padding-top: 100px;
