@@ -1085,6 +1085,44 @@ p {
   resize: vertical;
 }
 
+.form-success {
+  text-align: center;
+  padding: var(--space-7) var(--space-5);
+  background: linear-gradient(135deg, rgba(94, 139, 77, 0.1) 0%, rgba(212, 148, 44, 0.1) 100%);
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--color-success);
+}
+
+.form-success .success-icon {
+  width: 80px;
+  height: 80px;
+  background: var(--color-success);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-5);
+}
+
+.form-success .success-icon svg {
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+.form-success h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-dark);
+  margin-bottom: var(--space-3);
+}
+
+.form-success p {
+  color: var(--color-gray-700);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
 .contact-info {
   display: flex;
   flex-direction: column;

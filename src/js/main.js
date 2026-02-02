@@ -111,6 +111,108 @@ function validateForm(form) {
   return isValid;
 }
 
+// Submit contact form
+function submitContactForm(event) {
+  event.preventDefault();
+  const form = event.target;
+  const submitBtn = form.querySelector('button[type="submit"]');
+
+  if (!validateForm(form)) {
+    return false;
+  }
+
+  // Disable button during submission
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Envoi en cours...';
+
+  // Collect form data
+  const formData = new FormData(form);
+  const data = {
+    name: formData.get('name'),
+    phone: formData.get('phone'),
+    email: formData.get('email') || 'Non renseigné',
+    goal: formData.get('goal') || 'Non renseigné',
+    availability: formData.get('availability') || 'Non renseigné',
+    message: formData.get('message') || 'Aucun'
+  };
+
+  // Send email via Brevo API
+  const emailContent = {
+    sender: { name: 'Nag Coaching Site', email: 'contact@nagcoaching.fr' },
+    to: [{ email: 'nagcoachingpro@gmail.com', name: 'Nag Coaching' }],
+    subject: 'Nouvelle demande d\'essai - ' + data.name,
+    htmlContent: `
+      <h2>Nouvelle demande de séance d'essai</h2>
+      <table style="border-collapse: collapse; width: 100%; max-width: 500px;">
+        <tr><td style="padding: 10px; border: 1px solid #ddd; background: #f5f5f5;"><strong>Prénom</strong></td><td style="padding: 10px; border: 1px solid #ddd;">${data.name}</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid #ddd; background: #f5f5f5;"><strong>Téléphone</strong></td><td style="padding: 10px; border: 1px solid #ddd;"><a href="tel:${data.phone}">${data.phone}</a></td></tr>
+        <tr><td style="padding: 10px; border: 1px solid #ddd; background: #f5f5f5;"><strong>Email</strong></td><td style="padding: 10px; border: 1px solid #ddd;">${data.email}</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid #ddd; background: #f5f5f5;"><strong>Objectif</strong></td><td style="padding: 10px; border: 1px solid #ddd;">${data.goal}</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid #ddd; background: #f5f5f5;"><strong>Disponibilités</strong></td><td style="padding: 10px; border: 1px solid #ddd;">${data.availability}</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid #ddd; background: #f5f5f5;"><strong>Message</strong></td><td style="padding: 10px; border: 1px solid #ddd;">${data.message}</td></tr>
+      </table>
+      <p style="margin-top: 20px; color: #666;">Envoyé depuis le formulaire de contact nagcoaching.fr</p>
+    `
+  };
+
+  fetch('https://api.brevo.com/v3/smtp/email', {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+      'api-key': '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'
+    },
+    body: JSON.stringify(emailContent)
+  })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Erreur envoi');
+    }
+    return response.json();
+  })
+  .then(() => {
+    // Show success message
+    showFormSuccess(data);
+  })
+  .catch(error => {
+    console.error('Erreur:', error);
+    // Show success anyway (fallback to WhatsApp)
+    showFormSuccess(data);
+  });
+
+  return false;
+}
+
+function showFormSuccess(data) {
+  // Build WhatsApp message with form data
+  const whatsappMessage = encodeURIComponent(
+    'Bonjour, je souhaite réserver une séance d\'essai gratuite.\n\n' +
+    'Prénom: ' + data.name + '\n' +
+    'Téléphone: ' + data.phone + '\n' +
+    (data.email !== 'Non renseigné' ? 'Email: ' + data.email + '\n' : '') +
+    (data.goal !== 'Non renseigné' ? 'Objectif: ' + data.goal + '\n' : '') +
+    (data.availability !== 'Non renseigné' ? 'Disponibilités: ' + data.availability + '\n' : '') +
+    (data.message !== 'Aucun' ? 'Message: ' + data.message : '')
+  );
+
+  const whatsappLink = 'https://wa.me/33674466641?text=' + whatsappMessage;
+
+  const formFields = document.getElementById('formFields');
+  const formSuccess = document.getElementById('formSuccess');
+
+  if (formFields && formSuccess) {
+    formFields.style.display = 'none';
+    formSuccess.style.display = 'block';
+
+    const whatsappBtn = formSuccess.querySelector('.btn-whatsapp-send');
+    if (whatsappBtn) {
+      whatsappBtn.href = whatsappLink;
+    }
+
+    formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+}
+
 // Format phone number as user types
 document.querySelectorAll('input[type="tel"]').forEach(input => {
   input.addEventListener('input', (e) => {
