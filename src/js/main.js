@@ -136,37 +136,13 @@ function submitContactForm(event) {
     message: formData.get('message') || 'Aucun'
   };
 
-  // Send email via Brevo API
-  const emailContent = {
-    sender: { name: 'Nag Coaching Site', email: 'contact@nagcoaching.fr' },
-    to: [{ email: 'nagcoachingpro@gmail.com', name: 'Nag Coaching' }],
-    subject: 'Nouvelle demande d\'essai - ' + data.name,
-    htmlContent: `
-      <h2>Nouvelle demande de séance d'essai</h2>
-      <table style="border-collapse: collapse; width: 100%; max-width: 500px;">
-        <tr><td style="padding: 10px; border: 1px solid #ddd; background: #f5f5f5;"><strong>Prénom</strong></td><td style="padding: 10px; border: 1px solid #ddd;">${data.name}</td></tr>
-        <tr><td style="padding: 10px; border: 1px solid #ddd; background: #f5f5f5;"><strong>Téléphone</strong></td><td style="padding: 10px; border: 1px solid #ddd;"><a href="tel:${data.phone}">${data.phone}</a></td></tr>
-        <tr><td style="padding: 10px; border: 1px solid #ddd; background: #f5f5f5;"><strong>Email</strong></td><td style="padding: 10px; border: 1px solid #ddd;">${data.email}</td></tr>
-        <tr><td style="padding: 10px; border: 1px solid #ddd; background: #f5f5f5;"><strong>Objectif</strong></td><td style="padding: 10px; border: 1px solid #ddd;">${data.goal}</td></tr>
-        <tr><td style="padding: 10px; border: 1px solid #ddd; background: #f5f5f5;"><strong>Disponibilités</strong></td><td style="padding: 10px; border: 1px solid #ddd;">${data.availability}</td></tr>
-        <tr><td style="padding: 10px; border: 1px solid #ddd; background: #f5f5f5;"><strong>Message</strong></td><td style="padding: 10px; border: 1px solid #ddd;">${data.message}</td></tr>
-      </table>
-      <p style="margin-top: 20px; color: #666;">Envoyé depuis le formulaire de contact nagcoaching.fr</p>
-    `
-  };
-
-  // Encoded key for security
-  const _0x = ['eGtleXNpYi0xOWVkNGYyNmNiNmU0NTNjY2Y4', 'NmEzZjgzYTMzZTk4MTEyZWVlZWFjNzdlNDhkYTM3', 'NmIxMDk1YzQ3Y2ZlNTllLUpYR2JrVGl0WTNoWHc4UVM='];
-  const _k = atob(_0x[0] + _0x[1] + _0x[2]);
-
-  fetch('https://api.brevo.com/v3/smtp/email', {
+  // Send email via secure serverless function (API key is server-side)
+  fetch('/api/send-email', {
     method: 'POST',
     headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json',
-      'api-key': _k
+      'Content-Type': 'application/json'
     },
-    body: JSON.stringify(emailContent)
+    body: JSON.stringify(data)
   })
   .then(response => {
     if (!response.ok) {
