@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Pages principales -->
   <url>
-    <loc>https://nagcoaching.fr/</loc>
+    <loc>https://www.nagcoaching.fr/</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/coaching.html</loc>
+    <loc>https://www.nagcoaching.fr/coaching.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/studio.html</loc>
+    <loc>https://www.nagcoaching.fr/studio.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/tarifs.html</loc>
+    <loc>https://www.nagcoaching.fr/tarifs.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/contact.html</loc>
+    <loc>https://www.nagcoaching.fr/contact.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/avis.html</loc>
+    <loc>https://www.nagcoaching.fr/avis.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -40,37 +40,37 @@
 
   <!-- Pages services -->
   <url>
-    <loc>https://nagcoaching.fr/coaching-solo.html</loc>
+    <loc>https://www.nagcoaching.fr/coaching-solo.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/coaching-duo.html</loc>
+    <loc>https://www.nagcoaching.fr/coaching-duo.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/coaching-groupe.html</loc>
+    <loc>https://www.nagcoaching.fr/coaching-groupe.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/coaching-distance.html</loc>
+    <loc>https://www.nagcoaching.fr/coaching-distance.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/coaching-entreprise.html</loc>
+    <loc>https://www.nagcoaching.fr/coaching-entreprise.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/team-building.html</loc>
+    <loc>https://www.nagcoaching.fr/team-building.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -78,91 +78,91 @@
 
   <!-- Pages locales -->
   <url>
-    <loc>https://nagcoaching.fr/coach-sportif-vert-saint-denis.html</loc>
+    <loc>https://www.nagcoaching.fr/coach-sportif-vert-saint-denis.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/coach-sportif-melun.html</loc>
+    <loc>https://www.nagcoaching.fr/coach-sportif-melun.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/coach-sportif-cesson.html</loc>
+    <loc>https://www.nagcoaching.fr/coach-sportif-cesson.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/coach-sportif-savigny-le-temple.html</loc>
+    <loc>https://www.nagcoaching.fr/coach-sportif-savigny-le-temple.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/coach-sportif-nandy.html</loc>
+    <loc>https://www.nagcoaching.fr/coach-sportif-nandy.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/coach-sportif-voisenon.html</loc>
+    <loc>https://www.nagcoaching.fr/coach-sportif-voisenon.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/coach-sportif-le-mee-sur-seine.html</loc>
+    <loc>https://www.nagcoaching.fr/coach-sportif-le-mee-sur-seine.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/coach-sportif-rubelles.html</loc>
+    <loc>https://www.nagcoaching.fr/coach-sportif-rubelles.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/coach-sportif-reau.html</loc>
+    <loc>https://www.nagcoaching.fr/coach-sportif-reau.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/coach-sportif-lieusaint.html</loc>
+    <loc>https://www.nagcoaching.fr/coach-sportif-lieusaint.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/coach-sportif-moissy-cramayel.html</loc>
+    <loc>https://www.nagcoaching.fr/coach-sportif-moissy-cramayel.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/coach-sportif-vaux-le-penil.html</loc>
+    <loc>https://www.nagcoaching.fr/coach-sportif-vaux-le-penil.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/coach-sportif-dammarie-les-lys.html</loc>
+    <loc>https://www.nagcoaching.fr/coach-sportif-dammarie-les-lys.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/coach-sportif-la-rochette.html</loc>
+    <loc>https://www.nagcoaching.fr/coach-sportif-la-rochette.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/coach-sportif-boissise-le-roi.html</loc>
+    <loc>https://www.nagcoaching.fr/coach-sportif-boissise-le-roi.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -170,19 +170,19 @@
 
   <!-- Pages légales -->
   <url>
-    <loc>https://nagcoaching.fr/mentions-legales.html</loc>
+    <loc>https://www.nagcoaching.fr/mentions-legales.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/politique-confidentialite.html</loc>
+    <loc>https://www.nagcoaching.fr/politique-confidentialite.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://nagcoaching.fr/cgv.html</loc>
+    <loc>https://www.nagcoaching.fr/cgv.html</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
